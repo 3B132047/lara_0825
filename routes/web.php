@@ -48,6 +48,10 @@ $post->update([
     'content'=>'update content',
 ]);
 
+$post = Post::find(1);
+$post->title = 'saved title';
+$post->content = 'saved content';
+$post->save();
 
 Route::get('/', function () {
     return view('welcome');
