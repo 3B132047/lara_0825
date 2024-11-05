@@ -38,6 +38,9 @@ foreach ($posts as $post){
 }
 dd($posts);
 
+$post = Post::where('id','<',10)->orderBy('id','DESC')->get();
+dd($posts);
+
 Route::get('/', function () {
     return view('welcome');
 });
