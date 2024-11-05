@@ -21,6 +21,10 @@ Post::create([
     'title'=>
     'content'=>
 ]);
+$post = Post::find(1);
+echo '標題:'.$post->title.'<br>';
+echo '內容:'.$post->content.'<br>';
+dd($post);
 Route::get('/', function () {
     return view('welcome');
 });
