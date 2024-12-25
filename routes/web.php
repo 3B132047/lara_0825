@@ -85,6 +85,14 @@ Route::get('/', function () {
     }
     */
 
+    $comment = Comment::find(4);
+    echo $comment->content.'<br>';
+    echo '******************'.'<br>';
+    $post = $comment->post;
+    echo $post->id.'<br>';
+    echo $post->title.'<br>';
+    echo $post->content.'<br>';
+
     
 
 });
