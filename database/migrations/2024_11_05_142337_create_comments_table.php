@@ -27,8 +27,5 @@ return new class extends Migration
         Schema::dropIfExists('comments');
     }
 
-    public function post()
-    {
-        return $this->belongsTo(Post::class);
-    }
+    
 };
