@@ -58,7 +58,10 @@ Route::get('/', function () {
     //$post = Post::find(1);
     //$post->delete();
 
-    Post::destroy(3,5,7);
+    //Post::destroy(3,5,7);
+
+    $allPosts = Post::all();
+    dd($allPosts);
 
 
 });
