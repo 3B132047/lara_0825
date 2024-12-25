@@ -58,7 +58,7 @@ Route::get('/', function () {
     //$post = Post::find(1);
     //$post->delete();
 
-    Post::destroy(2);
+    Post::destroy(3,5,7);
 
 
 });
