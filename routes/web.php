@@ -63,8 +63,11 @@ Route::get('/', function () {
     //$allPosts = Post::all();
     //dd($allPosts);
 
-    $featurePosts = Post::where('is_feature', true)->get();
-    dd($featurePosts);
+    //$featurePosts = Post::where('is_feature', true)->get();
+    //dd($featurePosts);
+
+    $fourthPost = Post::find(4);
+    dd($fourthPost);
 
 
 });
