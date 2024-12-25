@@ -66,8 +66,11 @@ Route::get('/', function () {
     //$featurePosts = Post::where('is_feature', true)->get();
     //dd($featurePosts);
 
-    $fourthPost = Post::find(4);
-    dd($fourthPost);
+    //$fourthPost = Post::find(4);
+    //dd($fourthPost);
+
+    $lastPost = Post::orderBy('id','DESC')->first();
+    dd($lastPost);
 
 
 });
